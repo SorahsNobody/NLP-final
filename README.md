@@ -6,9 +6,67 @@ This project is for Natural Language Processing (CS 536) with Doctor Casey Kenni
 
 The goal of this project is to see if there are any language features, from search engine result titles and snippets, that affect whether or not a child searcher will click on a result or not.
 
+## Environment set up
 
+Anaconda3 and Google Collab were both utilized for this project.
 
-## Features Utilized, Code, Definition
+You can clone one of the environments used for this project by using:
+
+```
+conda create --name <name of your new env> --file nlp_final.txt
+```
+
+**OR** you can install the packages listed in "nlp_final.txt" to an existing environment using:
+
+```
+conda install --name <name of your env> --file nlp_final.txt
+```
+**OR** you can install of the needed packages as you progress through the notebooks. If you do this method you'll need the following packages:
+
+- textstat
+- langdetect
+- spellchecker
+- pyspellchecker
+- pytorch (with LAPACK if using cpu)
+- csv
+- pickle
+- string
+- pandas
+- numpy
+- tqdm
+- json
+- nltk
+- os
+- re
+- shlex
+- subprocess
+- time
+- sklearn
+- lingfeat
+
+**NOTE**: to get lingfeat to work, you should clone their repo (https://github.com/brucewlee/lingfeat) and move the lingfeat folder up one level.
+
+lingfeat repo structure:
+```
+-lingfeat <- rename this folder so your environment doesn't confuse the two folders
+--img
+--lingfeat <- this folder needs to move up one level to work
+--.DS_Store
+--...
+```
+
+Then you can call the lingfeat functions as seen in the included notebooks.
+
+## Implementation
+
+1. With the CAST data dump, run the predict.ipynb notebook to create and output the "full_results_data.csv"
+2. Run through the featuresBEN.ipynb notebook to create and output "features.csv", "title_features.csv", and "snippet_features.csv"
+3. Run through the DataExtraction.ipynb notebook to create and output the feature files
+4. Finally, run through the Classification.ipynb notebook to train, test, and evaluate the models.
+
+**Optional**: You can run through the DataExploration.ipynb if you want to see some preliminary exploration.
+
+## Features Utilized, Subgroup Code, Definition
 ### Features were extracted using lingfeat: https://github.com/brucewlee/lingfeat
 ### A huge thank you to Bruce W. Lee and all of the authors of lingfeat for their incredible work
 
