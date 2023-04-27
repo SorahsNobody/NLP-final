@@ -2,6 +2,11 @@
 
 This project is for Natural Language Processing (CS 536) with Doctor Casey Kennington, Spring 2023
 
+# Authors
+
+- Benjamin Bettencourt
+- Assoumer Redempta Manzi Muneza
+
 ## Goal
 
 The goal of this project is to see if there are any language features, from search engine result titles and snippets, that affect whether or not a child searcher will click on a result or not.
