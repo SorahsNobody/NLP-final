@@ -67,7 +67,7 @@ Then you can call the lingfeat functions as seen in the included notebooks.
 1. With the CAST data dump, run the predict.ipynb notebook to create and output the "full_results_data.csv"
 2. Run through the featuresBEN.ipynb notebook to create and output "features.csv", "title_features.csv", and "snippet_features.csv"
 3. Run through the DataExtraction.ipynb notebook to create and output the feature files
-4. Finally, run through the Classification.ipynb notebook to train, test, and evaluate the models.
+4. Finally, run through the Classification.ipynb, title_classification_RF.ipynb, and snippet_classification.ipynb notebooks to train, test, and evaluate the models.
 
 **Optional**: You can run through the DataExploration.ipynb if you want to see some preliminary exploration.
 
